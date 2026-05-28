@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Dra. Eugenia Peña — Odontóloga con 24 años de experiencia. Especialidades en estética dental, implantes, periodoncia y más. Docente UBA. Buenos Aires." />
+  <meta name="keywords" content="odontóloga Buenos Aires, estética dental, carillas, blanqueamiento, implantes dentales, periodoncia, Dra. Eugenia Peña, UBA" />
+  <meta property="og:title" content="Dra. Eugenia Peña — Odontología & Docencia" />
+  <meta property="og:description" content="24 años de experiencia en odontología integral. Docente UBA. Atención profesional con equipo multidisciplinario en Buenos Aires." />
+  <meta property="og:type" content="website" />
+  <title>Dra. Eugenia Peña — Odontología & Docencia</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Figtree:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            sage:    { light: '#C2D4C0', DEFAULT: '#7A9E82', dark: '#537360' },
+            cream:   '#EDE0CC',
+            gold:    '#C9A870',
+            taupe:   '#8B8178',
+            parchment: '#FAF8F4',
+            ink:     '#2D2926',
+          },
+          fontFamily: {
+            display: ['"Cormorant Garamond"', 'serif'],
+            body:    ['Figtree', 'sans-serif'],
+          },
+        },
+      },
+    }
+  </script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Figtree', sans-serif; background-color: #FAF8F4; color: #2D2926; }
+
+    /* Reduced motion */
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+    }
+
+    /* Scrollbar */
+    ::-webkit-scrollbar { width: 6px; }
+    ::-webkit-scrollbar-track { background: #FAF8F4; }
+    ::-webkit-scrollbar-thumb { background: #C2D4C0; border-radius: 3px; }
+
+    /* Focus ring */
+    :focus-visible { outline: 3px solid #7A9E82; outline-offset: 3px; }
+
+    /* Divider */
+    .gold-divider {
+      display: block;
+      width: 48px;
+      height: 2px;
+      background: #C9A870;
+      border-radius: 2px;
+    }
+
+    /* Section fade-in */
+    .reveal {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Hero pattern */
+    .hero-pattern {
+      background-color: #537360;
+      background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23c2d4c0' fill-opacity='0.08'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    }
+
+    /* Specialty card hover */
+    .specialty-card {
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .specialty-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 32px rgba(45,41,38,0.10);
+    }
+
+    /* Nav scroll effect */
+    .nav-scrolled {
+      background-color: rgba(250,248,244,0.97) !important;
+      box-shadow: 0 2px 16px rgba(45,41,38,0.08);
+    }
+
+    /* WhatsApp pulse */
+    @keyframes wa-pulse {
+      0%, 100% { box-shadow: 0 0 0 0 rgba(122,158,130,0.5); }
+      50%       { box-shadow: 0 0 0 10px rgba(122,158,130,0); }
+    }
+    .wa-pulse { animation: wa-pulse 2.5s ease-in-out infinite; }
+  </style>
+</head>
+<body>
+
+  <!-- Skip link for accessibility -->
+  <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:z-50 focus:top-4 focus:left-4 focus:bg-sage focus:text-white focus:px-4 focus:py-2 focus:rounded-md focus:font-body">
+    Saltar al contenido principal
+  </a>
+
+  <!-- ─── NAVBAR ─── -->
+  <header id="navbar" role="banner" class="fixed top-0 left-0 right-0 z-40 transition-all duration-300 bg-transparent">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="#inicio" class="font-display text-xl font-light tracking-wide text-parchment hover:text-cream transition-colors duration-200" aria-label="Dra. Eugenia Peña — Inicio">
+        Dra. Eugenia Peña
+      </a>
+      <nav role="navigation" aria-label="Navegación principal">
+        <ul class="hidden md:flex items-center gap-8 text-sm font-body text-parchment/90">
+          <li><a href="#sobre-mi" class="hover:text-cream transition-colors duration-200">Sobre mí</a></li>
+          <li><a href="#servicios" class="hover:text-cream transition-colors duration-200">Servicios</a></li>
+          <li><a href="#formacion" class="hover:text-cream transition-colors duration-200">Formación</a></li>
+          <li><a href="#contacto" class="hover:text-cream transition-colors duration-200">Contacto</a></li>
+        </ul>
+      </nav>
+      <a
+        href="https://wa.me/5491166782321"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Contactar por WhatsApp"
+        class="inline-flex items-center gap-2 bg-sage text-white text-sm font-body font-medium px-4 py-2 rounded-full cursor-pointer hover:bg-sage-dark transition-colors duration-200"
+      >
+        <svg class="w-4 h-4 flex-shrink-0" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+        </svg>
+        WhatsApp
+      </a>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ─── HERO ─── -->
+    <section id="inicio" class="hero-pattern min-h-screen flex items-center relative overflow-hidden" aria-labelledby="hero-title">
+      <!-- Decorative circles -->
+      <div class="absolute top-20 right-0 w-96 h-96 bg-sage/10 rounded-full -translate-y-1/4 translate-x-1/4 pointer-events-none" aria-hidden="true"></div>
+      <div class="absolute bottom-0 left-0 w-72 h-72 bg-gold/10 rounded-full translate-y-1/4 -translate-x-1/4 pointer-events-none" aria-hidden="true"></div>
+
+      <div class="max-w-6xl mx-auto px-6 py-32 grid md:grid-cols-2 gap-12 items-center">
+        <!-- Text -->
+        <div class="space-y-6">
+          <p class="font-body text-sage-light text-sm font-medium uppercase tracking-widest">Odontología &amp; Docencia</p>
+          <h1 id="hero-title" class="font-display text-5xl md:text-6xl lg:text-7xl font-light text-parchment leading-tight">
+            Dra. Eugenia<br/><em class="not-italic font-normal text-cream">Peña</em>
+          </h1>
+          <p class="font-body text-parchment/75 text-lg font-light leading-relaxed max-w-md">
+            24 años de experiencia en odontología integral. Docente en la Cátedra de Operatoria y Restauradora de la <strong class="font-medium text-parchment/90">UBA</strong>.
+          </p>
+          <div class="flex flex-wrap gap-4 pt-2">
+            <a
+              href="https://wa.me/5491166782321"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Reservar turno por WhatsApp"
+              class="wa-pulse inline-flex items-center gap-2 bg-sage hover:bg-sage-dark text-white font-body font-medium px-6 py-3 rounded-full cursor-pointer transition-colors duration-200"
+            >
+              <svg class="w-5 h-5 flex-shrink-0" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+              </svg>
+              Reservar turno
+            </a>
+            <a
+              href="#sobre-mi"
+              class="inline-flex items-center gap-2 border border-parchment/40 text-parchment/80 hover:border-parchment hover:text-parchment font-body font-medium px-6 py-3 rounded-full cursor-pointer transition-colors duration-200"
+            >
+              Conocer más
+            </a>
+          </div>
+          <!-- Trust badges -->
+          <div class="flex flex-wrap gap-6 pt-4" aria-label="Credenciales">
+            <div class="flex items-center gap-2">
+              <span class="gold-divider w-6 h-0.5 bg-gold rounded"></span>
+              <span class="font-body text-parchment/60 text-xs uppercase tracking-wider">24 años de experiencia</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <span class="w-6 h-0.5 bg-gold rounded block"></span>
+              <span class="font-body text-parchment/60 text-xs uppercase tracking-wider">Docente UBA</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero photo -->
+        <div class="hidden md:flex justify-center">
+          <div class="relative">
+            <div class="w-80 h-[480px] rounded-3xl overflow-hidden shadow-2xl border-2 border-parchment/20">
+              <img
+                src="fotos/eugenia.jpg"
+                alt="Dra. Eugenia Peña — Odontóloga y Docente UBA"
+                class="w-full h-full object-cover object-top"
+                loading="eager"
+              />
+            </div>
+            <!-- Credential chip bottom-left -->
+            <div class="absolute -bottom-5 -left-6 bg-gold text-white font-body text-xs font-semibold px-4 py-2 rounded-full shadow-lg" aria-hidden="true">
+              Docente UBA
+            </div>
+            <!-- Experience chip top-right -->
+            <div class="absolute -top-4 -right-6 bg-ink/90 backdrop-blur-sm text-parchment font-body text-xs font-medium px-4 py-2 rounded-full shadow-lg border border-parchment/10" aria-hidden="true">
+              24 años de experiencia
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scroll indicator -->
+      <div class="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-parchment/40" aria-hidden="true">
+        <span class="font-body text-xs uppercase tracking-widest">Scroll</span>
+        <svg class="w-4 h-4 animate-bounce" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+        </svg>
+      </div>
+    </section>
+
+    <!-- ─── SOBRE MÍ ─── -->
+    <section id="sobre-mi" class="py-24 bg-parchment" aria-labelledby="sobre-mi-title">
+      <div class="max-w-6xl mx-auto px-6">
+        <div class="grid md:grid-cols-2 gap-16 items-start">
+          <!-- Left: identity -->
+          <div class="reveal space-y-6">
+            <p class="font-body text-sage text-sm font-medium uppercase tracking-widest">Sobre mí</p>
+            <h2 id="sobre-mi-title" class="font-display text-4xl md:text-5xl font-light text-ink leading-tight">
+              Detrás de<br/><em class="italic">cada sonrisa</em>
+            </h2>
+            <span class="gold-divider block"></span>
+            <div class="font-body text-taupe leading-relaxed space-y-4 text-base">
+              <p>
+                Soy odontóloga egresada por primera vez en el año 2002 en Venezuela. Luego, en Argentina, me recibí por segunda vez en 2018. Con eso, cuento con <strong class="text-ink font-medium">24 años de ejercicio legal de la odontología</strong>, con énfasis en la atención integral del paciente adulto.
+              </p>
+              <p>
+                Combino el amor por la odontología con la <strong class="text-ink font-medium">docencia</strong>, que practico desde el año 2002. Hoy soy docente en la Cátedra de Operatoria y Restauradora de la <strong class="text-ink font-medium">Universidad de Buenos Aires (UBA)</strong>.
+              </p>
+              <p>
+                Soy Magíster con especializaciones en Estética, Endodoncia e Implantología, y actualmente curso el 3.° año de la especialidad en <strong class="text-ink font-medium">Periodoncia</strong>.
+              </p>
+            </div>
+          </div>
+
+          <!-- Right: photo + membership + areas -->
+          <div class="reveal space-y-6">
+            <!-- Consultorio photo -->
+            <div class="rounded-2xl overflow-hidden h-52 shadow-md">
+              <img
+                src="fotos/consultorio.jpg"
+                alt="Consultorio de la Dra. Eugenia Peña en Buenos Aires"
+                class="w-full h-full object-cover"
+                loading="lazy"
+              />
+            </div>
+            <!-- Membership card -->
+            <div class="bg-sage/10 border border-sage/20 rounded-2xl p-6 flex gap-4 items-start">
+              <div class="w-10 h-10 bg-sage rounded-xl flex items-center justify-center flex-shrink-0" aria-hidden="true">
+                <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 01-1.043 3.296 3.745 3.745 0 01-3.296 1.043A3.745 3.745 0 0112 21c-1.268 0-2.39-.63-3.068-1.593a3.745 3.745 0 01-3.296-1.043 3.745 3.745 0 01-1.043-3.296A3.745 3.745 0 013 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 011.043-3.296 3.745 3.745 0 013.296-1.043A3.745 3.745 0 0112 3c1.268 0 2.39.63 3.068 1.593a3.745 3.745 0 013.296 1.043 3.745 3.745 0 011.043 3.296A3.745 3.745 0 0121 12z" />
+                </svg>
+              </div>
+              <div>
+                <p class="font-body font-semibold text-ink text-sm">Sociedad Argentina de Operatoria y Materiales Dentales</p>
+                <p class="font-body text-taupe text-sm mt-1">Miembro activa — SAOMD</p>
+              </div>
+            </div>
+
+            <!-- Areas -->
+            <div>
+              <p class="font-body text-ink font-semibold text-sm uppercase tracking-wider mb-4">Áreas de conocimiento</p>
+              <ul class="grid grid-cols-1 gap-2" role="list">
+                <li class="flex items-center gap-3 font-body text-taupe text-sm"><div class="w-1.5 h-1.5 bg-gold rounded-full flex-shrink-0" aria-hidden="true"></div>Operatoria Dental</li>
+                <li class="flex items-center gap-3 font-body text-taupe text-sm"><div class="w-1.5 h-1.5 bg-gold rounded-full flex-shrink-0" aria-hidden="true"></div>Estética Dental</li>
+                <li class="flex items-center gap-3 font-body text-taupe text-sm"><div class="w-1.5 h-1.5 bg-gold rounded-full flex-shrink-0" aria-hidden="true"></div>Carillas Directas e Indirectas</li>
+                <li class="flex items-center gap-3 font-body text-taupe text-sm"><div class="w-1.5 h-1.5 bg-gold rounded-full flex-shrink-0" aria-hidden="true"></div>Blanqueamientos</li>
+                <li class="flex items-center gap-3 font-body text-taupe text-sm"><div class="w-1.5 h-1.5 bg-gold rounded-full flex-shrink-0" aria-hidden="true"></div>Odontología Biomimética</li>
+                <li class="flex items-center gap-3 font-body text-taupe text-sm"><div class="w-1.5 h-1.5 bg-gold rounded-full flex-shrink-0" aria-hidden="true"></div>Incrustaciones, postes y coronas libres de metal</li>
+                <li class="flex items-center gap-3 font-body text-taupe text-sm"><div class="w-1.5 h-1.5 bg-gold rounded-full flex-shrink-0" aria-hidden="true"></div>Enfermedad Periodontal</li>
+                <li class="flex items-center gap-3 font-body text-taupe text-sm"><div class="w-1.5 h-1.5 bg-gold rounded-full flex-shrink-0" aria-hidden="true"></div>Implantología baja y mediana complejidad</li>
+                <li class="flex items-center gap-3 font-body text-taupe text-sm"><div class="w-1.5 h-1.5 bg-gold rounded-full flex-shrink-0" aria-hidden="true"></div>Coronas sobre implantes</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── SERVICIOS / ESPECIALIDADES ─── -->
+    <section id="servicios" class="py-24 bg-cream/30" aria-labelledby="servicios-title">
+      <div class="max-w-6xl mx-auto px-6">
+        <div class="text-center mb-16 reveal">
+          <p class="font-body text-sage text-sm font-medium uppercase tracking-widest mb-3">Equipo multidisciplinario</p>
+          <h2 id="servicios-title" class="font-display text-4xl md:text-5xl font-light text-ink leading-tight">
+            Especialidades en <em class="italic">nuestro consultorio</em>
+          </h2>
+          <span class="gold-divider mx-auto mt-4 block"></span>
+          <p class="font-body text-taupe text-base mt-5 max-w-xl mx-auto leading-relaxed">
+            Contamos con un equipo multidisciplinario — todos con posgrado — para brindarte atención integral en un solo lugar.
+          </p>
+        </div>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+
+          <!-- Estética -->
+          <article class="specialty-card bg-white rounded-2xl p-6 border border-cream cursor-default" aria-label="Especialidad: Estética">
+            <div class="w-11 h-11 bg-sage/15 rounded-xl flex items-center justify-center mb-4" aria-hidden="true">
+              <svg class="w-5 h-5 text-sage-dark" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09z" />
+              </svg>
+            </div>
+            <h3 class="font-body font-semibold text-ink text-sm mb-2">Estética Dental</h3>
+            <p class="font-body text-taupe text-xs leading-relaxed">Carillas, blanqueamientos, incrustaciones y coronas libres de metal.</p>
+          </article>
+
+          <!-- Ortodoncia -->
+          <article class="specialty-card bg-white rounded-2xl p-6 border border-cream cursor-default" aria-label="Especialidad: Ortodoncia">
+            <div class="w-11 h-11 bg-sage/15 rounded-xl flex items-center justify-center mb-4" aria-hidden="true">
+              <svg class="w-5 h-5 text-sage-dark" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6A2.25 2.25 0 016 3.75h2.25A2.25 2.25 0 0110.5 6v2.25a2.25 2.25 0 01-2.25 2.25H6a2.25 2.25 0 01-2.25-2.25V6zM3.75 15.75A2.25 2.25 0 016 13.5h2.25a2.25 2.25 0 012.25 2.25V18a2.25 2.25 0 01-2.25 2.25H6A2.25 2.25 0 013.75 18v-2.25zM13.5 6a2.25 2.25 0 012.25-2.25H18A2.25 2.25 0 0120.25 6v2.25A2.25 2.25 0 0118 10.5h-2.25a2.25 2.25 0 01-2.25-2.25V6zM13.5 15.75a2.25 2.25 0 012.25-2.25H18a2.25 2.25 0 012.25 2.25V18A2.25 2.25 0 0118 20.25h-2.25A2.25 2.25 0 0113.5 18v-2.25z" />
+              </svg>
+            </div>
+            <h3 class="font-body font-semibold text-ink text-sm mb-2">Ortodoncia</h3>
+            <p class="font-body text-taupe text-xs leading-relaxed">Brackets y alineadores para una sonrisa perfectamente alineada.</p>
+          </article>
+
+          <!-- Periodoncia -->
+          <article class="specialty-card bg-white rounded-2xl p-6 border border-cream cursor-default" aria-label="Especialidad: Periodoncia">
+            <div class="w-11 h-11 bg-sage/15 rounded-xl flex items-center justify-center mb-4" aria-hidden="true">
+              <svg class="w-5 h-5 text-sage-dark" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
+              </svg>
+            </div>
+            <h3 class="font-body font-semibold text-ink text-sm mb-2">Periodoncia</h3>
+            <p class="font-body text-taupe text-xs leading-relaxed">Encías, sarro, mal aliento y movilidad dental tratados por especialistas.</p>
+          </article>
+
+          <!-- Implantes -->
+          <article class="specialty-card bg-white rounded-2xl p-6 border border-cream cursor-default" aria-label="Especialidad: Implantes">
+            <div class="w-11 h-11 bg-sage/15 rounded-xl flex items-center justify-center mb-4" aria-hidden="true">
+              <svg class="w-5 h-5 text-sage-dark" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17L17.25 21A2.652 2.652 0 0021 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 11-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 004.486-6.336l-3.276 3.277a3.004 3.004 0 01-2.25-2.25l3.276-3.276a4.5 4.5 0 00-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437l1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008z" />
+              </svg>
+            </div>
+            <h3 class="font-body font-semibold text-ink text-sm mb-2">Implantes</h3>
+            <p class="font-body text-taupe text-xs leading-relaxed">Sustitución de dientes ausentes con implantes de alta calidad.</p>
+          </article>
+
+          <!-- Endodoncia -->
+          <article class="specialty-card bg-white rounded-2xl p-6 border border-cream cursor-default" aria-label="Especialidad: Endodoncia">
+            <div class="w-11 h-11 bg-gold/15 rounded-xl flex items-center justify-center mb-4" aria-hidden="true">
+              <svg class="w-5 h-5 text-gold" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9.594 3.94c.09-.542.56-.94 1.11-.94h2.593c.55 0 1.02.398 1.11.94l.213 1.281c.063.374.313.686.645.87.074.04.147.083.22.127.324.196.72.257 1.075.124l1.217-.456a1.125 1.125 0 011.37.49l1.296 2.247a1.125 1.125 0 01-.26 1.431l-1.003.827c-.293.24-.438.613-.431.992a6.759 6.759 0 010 .255c-.007.378.138.75.43.99l1.005.828c.424.35.534.954.26 1.43l-1.298 2.247a1.125 1.125 0 01-1.369.491l-1.217-.456c-.355-.133-.75-.072-1.076.124a6.57 6.57 0 01-.22.128c-.331.183-.581.495-.644.869l-.213 1.28c-.09.543-.56.941-1.11.941h-2.594c-.55 0-1.02-.398-1.11-.94l-.213-1.281c-.062-.374-.312-.686-.644-.87a6.52 6.52 0 01-.22-.127c-.325-.196-.72-.257-1.076-.124l-1.217.456a1.125 1.125 0 01-1.369-.49l-1.297-2.247a1.125 1.125 0 01.26-1.431l1.004-.827c.292-.24.437-.613.43-.992a6.932 6.932 0 010-.255c.007-.378-.138-.75-.43-.99l-1.004-.828a1.125 1.125 0 01-.26-1.43l1.297-2.247a1.125 1.125 0 011.37-.491l1.216.456c.356.133.751.072 1.076-.124.072-.044.146-.087.22-.128.332-.183.582-.495.644-.869l.214-1.281z" />
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+              </svg>
+            </div>
+            <h3 class="font-body font-semibold text-ink text-sm mb-2">Endodoncia</h3>
+            <p class="font-body text-taupe text-xs leading-relaxed">Tratamientos de conductos con precisión y mínima incomodidad.</p>
+          </article>
+
+          <!-- ATM -->
+          <article class="specialty-card bg-white rounded-2xl p-6 border border-cream cursor-default" aria-label="Especialidad: ATM y bruxismo">
+            <div class="w-11 h-11 bg-gold/15 rounded-xl flex items-center justify-center mb-4" aria-hidden="true">
+              <svg class="w-5 h-5 text-gold" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126zM12 15.75h.007v.008H12v-.008z" />
+              </svg>
+            </div>
+            <h3 class="font-body font-semibold text-ink text-sm mb-2">Disfunciones de ATM</h3>
+            <p class="font-body text-taupe text-xs leading-relaxed">Bruxismo y apretamiento dental diagnosticados y tratados a fondo.</p>
+          </article>
+
+          <!-- Cirugía -->
+          <article class="specialty-card bg-white rounded-2xl p-6 border border-cream cursor-default" aria-label="Especialidad: Cirugía maxilofacial">
+            <div class="w-11 h-11 bg-gold/15 rounded-xl flex items-center justify-center mb-4" aria-hidden="true">
+              <svg class="w-5 h-5 text-gold" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 3.104v5.714a2.25 2.25 0 01-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 014.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3M14.25 3.104c.251.023.501.05.75.082M19.8 15.3l-1.57.393A9.065 9.065 0 0112 15a9.065 9.065 0 00-6.23-.693L5 14.5m14.8.8l1.402 1.402c1.232 1.232.65 3.318-1.067 3.611A48.309 48.309 0 0112 21c-2.773 0-5.491-.235-8.135-.687-1.718-.293-2.3-2.379-1.067-3.61L5 14.5" />
+              </svg>
+            </div>
+            <h3 class="font-body font-semibold text-ink text-sm mb-2">Cirugía Maxilofacial</h3>
+            <p class="font-body text-taupe text-xs leading-relaxed">Extracción de 3.° molares y regeneración ósea guiada.</p>
+          </article>
+
+          <!-- Estomatología -->
+          <article class="specialty-card bg-white rounded-2xl p-6 border border-cream cursor-default" aria-label="Especialidad: Estomatología">
+            <div class="w-11 h-11 bg-gold/15 rounded-xl flex items-center justify-center mb-4" aria-hidden="true">
+              <svg class="w-5 h-5 text-gold" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+              </svg>
+            </div>
+            <h3 class="font-body font-semibold text-ink text-sm mb-2">Estomatología</h3>
+            <p class="font-body text-taupe text-xs leading-relaxed">Diagnóstico y tratamiento de patologías en tejidos blandos y duros de la boca.</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── AVISO IMPORTANTE ─── -->
+    <section class="py-16 bg-parchment" aria-label="Información importante">
+      <div class="max-w-3xl mx-auto px-6">
+        <div class="reveal bg-ink rounded-2xl p-8 flex flex-col sm:flex-row gap-6 items-start">
+          <div class="w-12 h-12 bg-gold/20 rounded-xl flex items-center justify-center flex-shrink-0" aria-hidden="true">
+            <svg class="w-6 h-6 text-gold" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z" />
+            </svg>
+          </div>
+          <div>
+            <h2 class="font-body font-semibold text-parchment text-base mb-2">Información importante</h2>
+            <ul class="space-y-2" role="list">
+              <li class="flex items-start gap-3">
+                <svg class="w-4 h-4 text-gold mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+                <span class="font-body text-parchment/80 text-sm">No trabajamos con ninguna obra social ni prepaga.</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="w-4 h-4 text-gold mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+                <span class="font-body text-parchment/80 text-sm">No atendemos pacientes menores de edad.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── FORMACIÓN Y DIPLOMAS ─── -->
+    <section id="formacion" class="py-24 bg-cream/30" aria-labelledby="formacion-title">
+      <div class="max-w-6xl mx-auto px-6">
+        <div class="text-center mb-16 reveal">
+          <p class="font-body text-sage text-sm font-medium uppercase tracking-widest mb-3">Trayectoria académica</p>
+          <h2 id="formacion-title" class="font-display text-4xl md:text-5xl font-light text-ink leading-tight">
+            Formación &amp; <em class="italic">Diplomas</em>
+          </h2>
+          <span class="gold-divider mx-auto mt-4 block"></span>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+
+          <!-- Item 1 -->
+          <div class="reveal bg-white rounded-2xl p-6 border border-cream flex gap-4">
+            <div class="flex flex-col items-center">
+              <div class="w-3 h-3 bg-sage rounded-full mt-1 flex-shrink-0" aria-hidden="true"></div>
+              <div class="w-0.5 bg-cream flex-1 mt-2" aria-hidden="true"></div>
+            </div>
+            <div class="pb-2">
+              <span class="font-body text-gold text-xs font-medium uppercase tracking-wider">2002</span>
+              <h3 class="font-body font-semibold text-ink text-sm mt-1">Licenciatura en Odontología</h3>
+              <p class="font-body text-taupe text-xs mt-1">Venezuela — Primer título universitario</p>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="reveal bg-white rounded-2xl p-6 border border-cream flex gap-4">
+            <div class="flex flex-col items-center">
+              <div class="w-3 h-3 bg-sage rounded-full mt-1 flex-shrink-0" aria-hidden="true"></div>
+              <div class="w-0.5 bg-cream flex-1 mt-2" aria-hidden="true"></div>
+            </div>
+            <div class="pb-2">
+              <span class="font-body text-gold text-xs font-medium uppercase tracking-wider">2002–presente</span>
+              <h3 class="font-body font-semibold text-ink text-sm mt-1">Docencia universitaria</h3>
+              <p class="font-body text-taupe text-xs mt-1">Cátedra de Operatoria y Restauradora — UBA</p>
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="reveal bg-white rounded-2xl p-6 border border-cream flex gap-4">
+            <div class="flex flex-col items-center">
+              <div class="w-3 h-3 bg-sage rounded-full mt-1 flex-shrink-0" aria-hidden="true"></div>
+              <div class="w-0.5 bg-cream flex-1 mt-2" aria-hidden="true"></div>
+            </div>
+            <div class="pb-2">
+              <span class="font-body text-gold text-xs font-medium uppercase tracking-wider">2018</span>
+              <h3 class="font-body font-semibold text-ink text-sm mt-1">Licenciatura en Odontología — UBA</h3>
+              <p class="font-body text-taupe text-xs mt-1">Argentina — Segundo título universitario</p>
+            </div>
+          </div>
+
+          <!-- Item 4 -->
+          <div class="reveal bg-white rounded-2xl p-6 border border-cream flex gap-4">
+            <div class="flex flex-col items-center">
+              <div class="w-3 h-3 bg-gold rounded-full mt-1 flex-shrink-0" aria-hidden="true"></div>
+              <div class="w-0.5 bg-cream flex-1 mt-2" aria-hidden="true"></div>
+            </div>
+            <div class="pb-2">
+              <span class="font-body text-gold text-xs font-medium uppercase tracking-wider">Posgrado</span>
+              <h3 class="font-body font-semibold text-ink text-sm mt-1">Magíster — Estética Dental</h3>
+              <p class="font-body text-taupe text-xs mt-1">Especialización en técnicas avanzadas de estética</p>
+            </div>
+          </div>
+
+          <!-- Item 5 -->
+          <div class="reveal bg-white rounded-2xl p-6 border border-cream flex gap-4">
+            <div class="flex flex-col items-center">
+              <div class="w-3 h-3 bg-gold rounded-full mt-1 flex-shrink-0" aria-hidden="true"></div>
+              <div class="w-0.5 bg-cream flex-1 mt-2" aria-hidden="true"></div>
+            </div>
+            <div class="pb-2">
+              <span class="font-body text-gold text-xs font-medium uppercase tracking-wider">Posgrado</span>
+              <h3 class="font-body font-semibold text-ink text-sm mt-1">Especialización en Endodoncia</h3>
+              <p class="font-body text-taupe text-xs mt-1">Tratamientos de conductos avanzados</p>
+            </div>
+          </div>
+
+          <!-- Item 6 -->
+          <div class="reveal bg-white rounded-2xl p-6 border border-cream flex gap-4">
+            <div class="flex flex-col items-center">
+              <div class="w-3 h-3 bg-gold rounded-full mt-1 flex-shrink-0" aria-hidden="true"></div>
+              <div class="w-0.5 bg-cream flex-1 mt-2" aria-hidden="true"></div>
+            </div>
+            <div class="pb-2">
+              <span class="font-body text-gold text-xs font-medium uppercase tracking-wider">Posgrado</span>
+              <h3 class="font-body font-semibold text-ink text-sm mt-1">Especialización en Implantología</h3>
+              <p class="font-body text-taupe text-xs mt-1">Implantología de baja y mediana complejidad</p>
+            </div>
+          </div>
+
+          <!-- Item 7 — En curso -->
+          <div class="reveal bg-sage/10 border border-sage/25 rounded-2xl p-6 flex gap-4 md:col-span-2">
+            <div class="flex flex-col items-center">
+              <div class="w-3 h-3 bg-sage rounded-full mt-1 flex-shrink-0 ring-4 ring-sage/20" aria-hidden="true"></div>
+            </div>
+            <div>
+              <span class="inline-flex items-center gap-1.5 bg-sage/20 text-sage-dark text-xs font-medium px-2.5 py-0.5 rounded-full mb-2">
+                <span class="w-1.5 h-1.5 bg-sage rounded-full animate-pulse" aria-hidden="true"></span>
+                En curso
+              </span>
+              <h3 class="font-body font-semibold text-ink text-sm mt-1">3.° año — Especialidad en Periodoncia</h3>
+              <p class="font-body text-taupe text-xs mt-1">Profundización en el tratamiento de enfermedades periodontales</p>
+            </div>
+          </div>
+
+        </div>
+
+        <p class="text-center font-body text-taupe text-sm mt-10 reveal">
+          Próximamente: galería completa de diplomas y certificaciones.
+        </p>
+      </div>
+    </section>
+
+    <!-- ─── CONTACTO ─── -->
+    <section id="contacto" class="py-24 hero-pattern" aria-labelledby="contacto-title">
+      <div class="max-w-4xl mx-auto px-6 text-center">
+        <div class="reveal space-y-4 mb-12">
+          <p class="font-body text-sage-light text-sm font-medium uppercase tracking-widest">¿Querés reservar un turno?</p>
+          <h2 id="contacto-title" class="font-display text-4xl md:text-5xl font-light text-parchment leading-tight">
+            Hablemos por <em class="italic">WhatsApp</em>
+          </h2>
+          <span class="gold-divider mx-auto block"></span>
+          <p class="font-body text-parchment/70 text-base max-w-md mx-auto leading-relaxed">
+            Solo respondemos por WhatsApp. <strong class="text-parchment/90 font-medium">No recibimos llamadas.</strong>
+          </p>
+        </div>
+
+        <div class="reveal grid sm:grid-cols-3 gap-4 mb-10">
+
+          <!-- WhatsApp -->
+          <a
+            href="https://wa.me/5491166782321"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Enviar mensaje de WhatsApp a Dra. Eugenia Peña"
+            class="group flex flex-col items-center gap-3 bg-parchment/10 hover:bg-sage border border-parchment/20 hover:border-sage rounded-2xl p-6 cursor-pointer transition-all duration-200"
+          >
+            <div class="w-12 h-12 bg-sage/30 group-hover:bg-white/20 rounded-xl flex items-center justify-center transition-colors duration-200" aria-hidden="true">
+              <svg class="w-6 h-6 text-parchment" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+              </svg>
+            </div>
+            <div>
+              <p class="font-body font-semibold text-parchment text-sm">WhatsApp</p>
+              <p class="font-body text-parchment/60 text-xs">+54 9 11 6678-2321</p>
+            </div>
+          </a>
+
+          <!-- Instagram -->
+          <a
+            href="https://instagram.com/dra.eugeniapena"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Ver perfil de Instagram de Dra. Eugenia Peña"
+            class="group flex flex-col items-center gap-3 bg-parchment/10 hover:bg-parchment/20 border border-parchment/20 rounded-2xl p-6 cursor-pointer transition-all duration-200"
+          >
+            <div class="w-12 h-12 bg-parchment/10 rounded-xl flex items-center justify-center" aria-hidden="true">
+              <svg class="w-6 h-6 text-parchment" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+              </svg>
+            </div>
+            <div>
+              <p class="font-body font-semibold text-parchment text-sm">Instagram</p>
+              <p class="font-body text-parchment/60 text-xs">@dra.eugeniapena</p>
+            </div>
+          </a>
+
+          <!-- Facebook -->
+          <a
+            href="https://facebook.com/dra.eugeniapena"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Ver página de Facebook de Dra. Eugenia Peña"
+            class="group flex flex-col items-center gap-3 bg-parchment/10 hover:bg-parchment/20 border border-parchment/20 rounded-2xl p-6 cursor-pointer transition-all duration-200"
+          >
+            <div class="w-12 h-12 bg-parchment/10 rounded-xl flex items-center justify-center" aria-hidden="true">
+              <svg class="w-6 h-6 text-parchment" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+              </svg>
+            </div>
+            <div>
+              <p class="font-body font-semibold text-parchment text-sm">Facebook</p>
+              <p class="font-body text-parchment/60 text-xs">dra.eugeniapena</p>
+            </div>
+          </a>
+
+        </div>
+
+        <!-- Big CTA -->
+        <div class="reveal">
+          <a
+            href="https://wa.me/5491166782321"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Reservar turno ahora por WhatsApp"
+            class="wa-pulse inline-flex items-center gap-3 bg-sage hover:bg-sage-dark text-white font-body font-semibold text-base px-8 py-4 rounded-full cursor-pointer transition-colors duration-200 shadow-lg"
+          >
+            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+            </svg>
+            Reservar turno ahora
+          </a>
+          <p class="font-body text-parchment/50 text-xs mt-4">Solo WhatsApp — No recibimos llamadas</p>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ─── FOOTER ─── -->
+  <footer class="bg-ink py-10 px-6" role="contentinfo">
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+      <div>
+        <p class="font-display text-xl font-light text-parchment">Dra. Eugenia Peña</p>
+        <p class="font-body text-taupe text-xs mt-1">Odontología &amp; Docencia · Buenos Aires, Argentina</p>
+      </div>
+      <nav aria-label="Redes sociales">
+        <ul class="flex gap-4" role="list">
+          <li>
+            <a href="https://wa.me/5491166782321" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" class="w-9 h-9 bg-parchment/10 hover:bg-sage rounded-lg flex items-center justify-center cursor-pointer transition-colors duration-200">
+              <svg class="w-4 h-4 text-parchment" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://instagram.com/dra.eugeniapena" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="w-9 h-9 bg-parchment/10 hover:bg-sage rounded-lg flex items-center justify-center cursor-pointer transition-colors duration-200">
+              <svg class="w-4 h-4 text-parchment" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://facebook.com/dra.eugeniapena" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="w-9 h-9 bg-parchment/10 hover:bg-sage rounded-lg flex items-center justify-center cursor-pointer transition-colors duration-200">
+              <svg class="w-4 h-4 text-parchment" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <p class="font-body text-taupe text-xs text-center md:text-right">
+        &copy; 2026 Dra. Eugenia Peña.<br class="md:hidden"/> Todos los derechos reservados.
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    // ─── Navbar scroll effect ───
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 60) {
+        navbar.classList.add('nav-scrolled');
+        navbar.querySelectorAll('a').forEach(a => {
+          a.classList.remove('text-parchment', 'text-parchment/90', 'text-parchment/80');
+          if (!a.classList.contains('bg-sage')) a.classList.add('text-ink');
+        });
+      } else {
+        navbar.classList.remove('nav-scrolled');
+        navbar.querySelectorAll('a').forEach(a => {
+          a.classList.remove('text-ink');
+          if (!a.classList.contains('bg-sage')) a.classList.add('text-parchment/90');
+        });
+      }
+    }, { passive: true });
+
+    // ─── Scroll reveal ───
+    const observer = new IntersectionObserver(
+      (entries) => entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); } }),
+      { threshold: 0.12 }
+    );
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+    // ─── Render areas list (template literal workaround) ───
+    // The bullet list in About is rendered via template literals in the HTML above;
+    // no extra JS needed since Tailwind handles styling.
+  </script>
+
+</body>
+</html>
